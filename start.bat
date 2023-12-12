@@ -13,7 +13,7 @@ sc start audiosrv >nul
 ICACLS C:\Windows\Temp /grant administrator:F >nul
 ICACLS C:\Windows\installer /grant administrator:F >nul
 echo Success!
-echo IP:
+echo IP:103.150.114.89
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "2Z3eg5JDTE1925PlzI30o1BUOe6_7QvEai9XBM9LbVoiy2wdt"
 echo Username: administrator
 echo Password: 9S8a7r6a5n
